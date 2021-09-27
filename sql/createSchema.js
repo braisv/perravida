@@ -12,14 +12,14 @@ const createSchema = async () => {
   console.log('- LOADING SCHEMA -')
   await dbClient.exec(schema.toString());
 
-  //const res = await dbClient.all('select *  from test');
-  //console.log(res);
+  const res = await dbClient.all('select *  from users');
+  console.log(res);
 
   dbClient.close();
 };
 
 createSchema().then(r => {
-  console.log('Finished  OK');
+  console.log('Finished  OK', r);
 }).catch(e => {
   console.log('Finished  KO', e);
 });
