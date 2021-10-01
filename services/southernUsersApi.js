@@ -22,6 +22,14 @@ const insertUser = (data) => {
   });
  };
 
+ const deleteUser = (data) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('ok');
+    }, 1000);
+  });
+ };
+
  const getUserFriends = (data) => {
   return new Promise((resolve) => {
     setTimeout(() => {
