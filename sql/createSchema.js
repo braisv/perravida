@@ -11,10 +11,6 @@ const createSchema = async () => {
 
   console.log('- LOADING SCHEMA -')
   await dbClient.exec(schema.toString());
-
-  const res = await dbClient.all('select *  from users');
-  console.log(res);
-
   dbClient.close();
 };
 
