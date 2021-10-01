@@ -33,7 +33,7 @@ npm start
 ```
 - GET: devuelve todos los usuarios.
 - POST: añade un usuario nuevo. Requiere: username, email, password, language, longitude, latitude.
-- UPDATE: actualiza un usuario. Requiere: id, username, email, password, language, longitude, latitude.
+- PUT: actualiza un usuario. Requiere: id, username, email, password, language, longitude, latitude.
 ```
 /users/:id
 ```
